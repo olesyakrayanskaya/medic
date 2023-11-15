@@ -27,20 +27,82 @@
         <button class="modal__btn" type="button">Хорошо :)</button>
       </div>
     </div>
-    <div class="container">
-      <section class="new-products">
+    <section class="new-products">
+      <div class="container">
         <header class="new-products__header">
           <h2 class="new-products__title">Новые поступления</h2>
           <div class="new-products__buttons">
-            <button class="new-products__btn"></button>
-            <button class="new-products__btn"></button>
+            <button class="new-products__btn">
+              <img
+                class="new-products__arr"
+                src="./assets/img/left.svg"
+                alt="left"
+              />
+            </button>
+            <button class="new-products__btn">
+              <img
+                class="new-products__arr"
+                src="./assets/img/right.svg"
+                alt="right"
+              />
+            </button>
           </div>
         </header>
         <div class="new-products__slide">
-          <div class="new-products__item product-card"></div>
+          <div class="new-products__item product-card">
+            <div class="product-card__icons">
+              <button class="product-card__btn product-card__btn_1"></button>
+              <button class="product-card__btn product-card__btn_2"></button>
+            </div>
+            <img class="product-card__img" src="./assets/img/1.jpg" alt="img" />
+            <div class="product-card__info">
+              <div class="product-card__article">Арт. 4501390</div>
+              <div class="product-card__comments">
+                <img
+                  class="product-card__chat"
+                  src="./assets/img/chat.svg"
+                  alt="icon"
+                />
+                <span class="product-card__count">5</span>
+              </div>
+            </div>
+            <h3 class="product-card__name">
+              Ингалятор компрессорный компактный MED-125
+            </h3>
+            <div class="product-card__stickers">
+              <span class="sticker sticker_in-stock">В наличии</span>
+              <span class="sticker sticker_hit">Хит</span>
+            </div>
+            <div class="product-card__prices">
+              <div>
+                <span class="product-card__price product-card__price_new"
+                  >24 529 ₽</span
+                >
+                <span class="product-card__unit">шт.</span>
+              </div>
+              <span class="product-card__price product-card__price_old"
+                >1 494 ₽</span
+              >
+            </div>
+            <button class="product-card__button button">
+              <img
+                class="product-card__cart"
+                src="./assets/img/cart.svg"
+                alt="cart"
+              />В корзину
+            </button>
+          </div>
         </div>
-      </section>
-      <section class="question">
+      </div>
+      <footer class="new-products__footer">
+        <button class="new-products__dot"></button>
+        <button class="new-products__dot"></button>
+        <button class="new-products__dot"></button>
+        <button class="new-products__dot"></button>
+      </footer>
+    </section>
+    <section class="question">
+      <div class="container">
         <form class="question__form" action="#">
           <header class="question__header">
             <img
@@ -112,7 +174,7 @@
             placeholder="Ваш вопрос*"
           ></textarea>
           <div class="question__send">
-            <input class="question__btn" type="submit" value="Задать вопрос" />
+            <input class="question__btn button button_dark" type="submit" value="Задать вопрос" />
             <input
               class="question__checkbox"
               type="checkbox"
@@ -127,7 +189,7 @@
             >
           </div>
         </form>
-      </section>
-    </div>
+      </div>
+    </section>
   </body>
 </html>

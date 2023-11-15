@@ -1,0 +1,120 @@
+@use '../base/variables';
+
+.sticker {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-family: 'Manrope', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  height: 24px;
+  margin-right: 4px;
+  white-space: nowrap;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (max-width: variables.$desktop-sticker-md) {
+    font-size: 10px;
+    line-height: 12px;
+    height: 20px;
+  }
+
+  @media (max-width: variables.$desktop-sticker-sm) {
+    height: 16px;
+    font-size: 8px;
+  }
+
+  &_in-stock {
+    background-color: #f0f7ee;
+    color: #64b847;
+    width: 77px;
+
+    @media (max-width: variables.$desktop-sticker-md) {
+      width: 67px;
+    }
+
+    @media (max-width: variables.$desktop-sm) {
+      width: 49px;
+    }
+  }
+
+  &_hit {
+    background-color: #ec7b52;
+    color: #ffffff;
+    width: 38px;
+
+    @media (max-width: variables.$desktop-sticker-md) {
+        width: 34px;
+      }
+  
+      @media (max-width: variables.$desktop-sm) {
+        width: 23px;
+      }
+  
+  }
+
+  &_not-available {
+    background-color: #f7eeee;
+    color: #e16a6a;
+    width: 101px;
+
+    @media (max-width: variables.$desktop-sticker-md) {
+        width: 87px;
+      }
+  
+      @media (max-width: variables.$desktop-sm) {
+        width: 65px;
+      }
+  
+  }
+
+  &_new {
+    background-color: #4092f1;
+    color: #ffffff;
+    width: 67px;
+
+    @media (max-width: variables.$desktop-sticker-md) {
+        width: 59px;
+      }
+  
+      @media (max-width: variables.$desktop-sm) {
+        width: 42px;
+      }
+  
+  }
+
+  &_promotion {
+    background-color: #67bb49;
+    color: #ffffff;
+    width: 53px;
+
+    @media (max-width: variables.$desktop-sticker-md) {
+        width: 47px;
+      }
+  
+      @media (max-width: variables.$desktop-sm) {
+        width: 33px;
+      }
+  
+  }
+
+  &_sale {
+    background-color: #fcdf28;
+    color: #ffffff;
+    width: 24px;
+
+    @media (max-width: variables.$desktop-sticker-md) {
+        width: 26px;
+      }
+  
+      @media (max-width: variables.$desktop-sm) {
+        width: 16px;
+      }
+  
+  }
+}

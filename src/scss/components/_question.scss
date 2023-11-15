@@ -30,7 +30,7 @@
 
   &__form {
     padding: 20px 32px;
-    border: 1px solid variables.$send-btn-color;
+    border: 1px solid variables.$dark-btn-color;
     border-radius: 24px;
 
     @media (max-width: variables.$desktop-md) {
@@ -97,31 +97,6 @@
       flex-direction: column;
       align-items: center;
     }
-  }
-
-  &__btn {
-    display: flex;
-    width: 256px;
-    padding: 14px 24px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    background-color: variables.$send-btn-color;
-    color: #fff;
-    border: none;
-
-    @media (max-width: variables.$desktop-md) {
-      width: 172px;
-      padding: 8px 16px;
-    }
-  }
-
-  &__btn:hover {
-    background-color: variables.$send-btn-hover;
-  }
-
-  &__btn:active {
-    background-color: variables.$send-btn-pressed;
   }
 
   &__checkbox {
