@@ -1,0 +1,187 @@
+@use '../base/variables';
+
+.question {
+  padding: 68px 0;
+
+  &__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__icon {
+    margin-right: 30px;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #000;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: variables.$subtitle-text;
+  }
+
+  &__form {
+    padding: 20px 32px;
+    border: 1px solid variables.$send-btn-color;
+    border-radius: 24px;
+
+    @media (max-width: variables.$desktop-md) {
+      padding: 16px 24px;
+    }
+
+    @media (max-width: variables.$desktop-sm) {
+      padding: 16px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    margin-bottom: 24px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @media (max-width: variables.$tablet) {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+    position: relative;
+
+    &::after {
+      content: 'Поле обязательно к заполнению';
+      position: absolute;
+      bottom: -18px;
+      left: 0;
+      font-family: 'Manrope', Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      color: variables.$err-text;
+      display: none;
+    }
+
+    &:has(.input:invalid)::after {
+      display: block;
+    }
+
+    @media (max-width: variables.$tablet) {
+      margin-right: 0;
+      margin-bottom: 24px;
+      width: 100%;
+    }
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__send {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    width: 256px;
+    padding: 14px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background-color: variables.$send-btn-color;
+    color: #fff;
+    border: none;
+
+    @media (max-width: variables.$desktop-md) {
+      width: 172px;
+      padding: 8px 16px;
+    }
+  }
+
+  &__btn:hover {
+    background-color: variables.$send-btn-hover;
+  }
+
+  &__btn:active {
+    background-color: variables.$send-btn-pressed;
+  }
+
+  &__checkbox {
+    opacity: 0;
+    cursor: auto;
+    margin-right: 12px;
+  }
+
+  &__label {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: variables.$subtitle-text;
+    margin-left: 24px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 19px;
+      height: 19px;
+      left: -28px;
+      border-radius: 4px;
+      background-color: variables.$default-btn-color;
+      cursor: pointer;
+    }
+
+    @media (max-width: variables.$desktop-md) {
+      font-size: 12px;
+    }
+
+    @media (max-width: 396px) {
+      margin-left: 60px;
+      &::before {
+        top: 12px;
+      }
+    }
+  }
+
+  &__checkbox:hover ~ &__label::before {
+    background-color: variables.$hover-btn-color;
+  }
+
+  &__checkbox:active ~ &__label::before {
+    background-color: variables.$pressed-btn-color;
+  }
+
+  &__checkbox:checked ~ &__label::before {
+    background-color: variables.$pressed-btn-color;
+    background-image: url('assets/img/checked.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__checkbox:invalid ~ &__label::before {
+    background-color: variables.$input-invalid;
+  }
+
+  &__link {
+    text-decoration: underline;
+    font-weight: 500;
+  }
+}

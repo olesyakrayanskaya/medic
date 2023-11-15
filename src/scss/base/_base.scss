@@ -1,0 +1,67 @@
+@use '../base/variables';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  color: variables.$main-text;
+}
+
+.container {
+  width: 100%;
+  max-width: 1660px;
+  margin: 0 auto;
+
+  @media (max-width: variables.$desktop-md) {
+    max-width: 1184px;
+  }
+
+  @media (max-width: variables.$desktop-sm) {
+    max-width: 952px;
+  }
+
+  @media (max-width: variables.$tablet) {
+    max-width: 655px;
+  }
+
+  @media (max-width: variables.$mobile) {
+    max-width: 320px;
+  }
+}
+
+:active,
+:hover,
+:focus {
+  outline: none;
+}
+
+li,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  color: inherit;
+}
+
+button,
+select,
+input {
+  cursor: pointer;
+}

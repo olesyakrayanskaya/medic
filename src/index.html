@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>MedicalStore</title>
+  </head>
+  <body>
+    <div class="modal">
+      <button class="modal__close">
+        <img
+          class="modal__close-icon"
+          src="./assets/img/modal-close.svg"
+          alt="close"
+        />
+      </button>
+      <div class="modal__item">
+        <img class="modal__icon" src="./assets/img/thanks.svg" alt="icon" />
+        <h4 class="modal__title">Спасибо!</h4>
+        <p class="modal__text">Вопрос отправлен</p>
+        <button class="modal__btn" type="button">Хорошо :)</button>
+      </div>
+    </div>
+    <div class="container">
+      <section class="new-products">
+        <header class="new-products__header">
+          <h2 class="new-products__title">Новые поступления</h2>
+          <div class="new-products__buttons">
+            <button class="new-products__btn"></button>
+            <button class="new-products__btn"></button>
+          </div>
+        </header>
+        <div class="new-products__slide">
+          <div class="new-products__item product-card"></div>
+        </div>
+      </section>
+      <section class="question">
+        <form class="question__form" action="#">
+          <header class="question__header">
+            <img
+              class="question__icon"
+              src="./assets/img/question.svg"
+              alt="icon"
+            />
+            <div class="question__description">
+              <h3 class="question__title">Не нашли ответа на свой вопрос?</h3>
+              <p class="question__subtitle">
+                Напишите нам, и мы предоставим необходимую информацию.
+              </p>
+            </div>
+          </header>
+          <div class="question__contacts">
+            <div class="question__item">
+              <input
+                class="question__input input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Имя*"
+                required
+                minlength="2"
+              />
+              <img
+                class="question__reset reset"
+                src="./assets/img/no.svg"
+                alt="reset"
+              />
+            </div>
+            <div class="question__item">
+              <input
+                class="question__input input"
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder="Телефон*"
+                required
+              />
+              <img
+                class="question__reset reset"
+                src="./assets/img/no.svg"
+                alt="reset"
+              />
+            </div>
+            <div class="question__item">
+              <input
+                class="question__input input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail*"
+                required
+              />
+              <img
+                class="question__reset reset"
+                src="./assets/img/no.svg"
+                alt="reset"
+              />
+            </div>
+          </div>
+          <textarea
+            class="question__textarea input input_textarea"
+            name="question"
+            id="question"
+            required
+            minlength="3"
+            placeholder="Ваш вопрос*"
+          ></textarea>
+          <div class="question__send">
+            <input class="question__btn" type="submit" value="Задать вопрос" />
+            <input
+              class="question__checkbox"
+              type="checkbox"
+              name="consent"
+              id="consent"
+              required
+            />
+            <label class="question__label" for="consent"
+              >Я согласен с условиями
+              <a class="question__link" href="#">пользовательского соглашения</a
+              >.</label
+            >
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

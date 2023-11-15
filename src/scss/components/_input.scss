@@ -1,0 +1,142 @@
+@use '../base/variables';
+
+.input {
+  border: none;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background-color: variables.$input-color;
+  width: 524px;
+  height: 52px;
+
+  @media (max-width: 1660px) {
+    width: 500px;
+  }
+
+  @media (max-width: 1586px) {
+    width: 460px;
+  }
+
+  @media (max-width: 1460px) {
+    width: 450px;
+  }
+
+  @media (max-width: 1430px) {
+    width: 430px;
+  }
+
+  @media (max-width: variables.$desktop-md) {
+    height: 44px;
+    width: 370px;
+    padding: 12px 16px;
+  }
+
+  @media (max-width: 1175px) {
+    width: 360px;
+  }
+
+  @media (max-width: 1140px) {
+    width: 320px;
+  }
+
+  @media (max-width: variables.$desktop-sm) {
+    width: 298px;
+  }
+
+  @media (max-width: 940px) {
+    width: 280px;
+  }
+
+  @media (max-width: 885px) {
+    width: 260px;
+  }
+
+  @media (max-width: 825px) {
+    width: 230px;
+  }
+
+  @media (max-width: variables.$tablet) {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  &::-webkit-input-placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: variables.$subtitle-text;
+  }
+
+  &::-moz-placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: variables.$subtitle-text;
+  }
+
+  &:-ms-input-placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: variables.$subtitle-text;
+  }
+
+  &::-ms-input-placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: variables.$subtitle-text;
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: variables.$subtitle-text;
+  }
+
+  &:invalid {
+    background-color: variables.$input-invalid;
+  }
+
+  &:hover {
+    background-color: variables.$input-hover;
+  }
+
+  &:active {
+    background-color: variables.$input-color;
+  }
+
+  &_textarea {
+    width: 100%;
+    max-width: 100%;
+    min-height: 132px;
+    margin-bottom: 16px;
+    resize: vertical;
+
+    @media (max-width: variables.$desktop-md) {
+      min-height: 68px;
+    }
+
+    @media (max-width: variables.$tablet) {
+      min-height: 108px;
+    }
+  }
+}
+
+.reset {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 18px;
+  right: 16px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.input:active ~ .reset {
+  opacity: 1;
+}
+
+.input:focus ~ .reset {
+  opacity: 1;
+}
