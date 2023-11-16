@@ -102,7 +102,8 @@
     background-color: variables.$input-hover;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     background-color: variables.$input-color;
   }
 
@@ -112,6 +113,11 @@
     min-height: 132px;
     margin-bottom: 16px;
     resize: vertical;
+
+    &:active,
+    &:focus {
+      background-color: variables.$input-color;
+    }
 
     @media (max-width: variables.$desktop-md) {
       min-height: 68px;
@@ -127,7 +133,7 @@
   width: 16px;
   height: 16px;
   position: absolute;
-  top: 18px;
+  top: 16px;
   right: 16px;
   cursor: pointer;
   opacity: 0;
