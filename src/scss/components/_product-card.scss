@@ -22,7 +22,7 @@
   }
 
   &:nth-child(n + 6) {
-    display: none;
+    // display: none;
   }
 
   @media (max-width: variables.$desktop-md) {
@@ -36,19 +36,19 @@
   @media (max-width: variables.$tablet-lg) {
     width: 213px;
     &:nth-child(n + 5) {
-      display: none;
+      // display: none;
     }
   }
 
   @media (max-width: variables.$tablet) {
     &:nth-child(n + 4) {
-      display: none;
+      // display: none;
     }
   }
 
   @media (max-width: 500px) {
     &:nth-child(n + 3) {
-      display: none;
+      // display: none;
     }
   }
 
