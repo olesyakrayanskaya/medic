@@ -49,13 +49,12 @@
     width: 38px;
 
     @media (max-width: variables.$desktop-sticker-md) {
-        width: 34px;
-      }
-  
-      @media (max-width: variables.$desktop-sm) {
-        width: 23px;
-      }
-  
+      width: 34px;
+    }
+
+    @media (max-width: variables.$desktop-sm) {
+      width: 23px;
+    }
   }
 
   &_not-available {
@@ -64,13 +63,12 @@
     width: 101px;
 
     @media (max-width: variables.$desktop-sticker-md) {
-        width: 87px;
-      }
-  
-      @media (max-width: variables.$desktop-sm) {
-        width: 65px;
-      }
-  
+      width: 87px;
+    }
+
+    @media (max-width: variables.$desktop-sm) {
+      width: 65px;
+    }
   }
 
   &_new {
@@ -79,13 +77,12 @@
     width: 67px;
 
     @media (max-width: variables.$desktop-sticker-md) {
-        width: 59px;
-      }
-  
-      @media (max-width: variables.$desktop-sm) {
-        width: 42px;
-      }
-  
+      width: 59px;
+    }
+
+    @media (max-width: variables.$desktop-sm) {
+      width: 42px;
+    }
   }
 
   &_promotion {
@@ -94,13 +91,12 @@
     width: 53px;
 
     @media (max-width: variables.$desktop-sticker-md) {
-        width: 47px;
-      }
-  
-      @media (max-width: variables.$desktop-sm) {
-        width: 33px;
-      }
-  
+      width: 47px;
+    }
+
+    @media (max-width: variables.$desktop-sm) {
+      width: 33px;
+    }
   }
 
   &_sale {
@@ -109,12 +105,44 @@
     width: 24px;
 
     @media (max-width: variables.$desktop-sticker-md) {
-        width: 26px;
-      }
-  
-      @media (max-width: variables.$desktop-sm) {
-        width: 16px;
-      }
-  
+      width: 26px;
+    }
+
+    @media (max-width: variables.$desktop-sm) {
+      width: 16px;
+    }
   }
+}
+
+.product-card__watch {
+  padding: 4px 8px;
+  align-items: center;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 2px 7px 0px rgba(28, 45, 64, 0.12);
+  color: variables.$subtitle-text;
+  font-family: 'Manrope', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  border: none;
+  position: absolute;
+  top: 86px;
+  left: calc(50% - 80px);
+  z-index: 400;
+  width: 159px;
+  height: 28px;
+  display: none;
+
+  @media (max-width: variables.$desktop-sticker-md) {
+    font-size: 10px;
+    line-height: 12px;
+    left: calc(50% - 70px);
+    width: 136px;
+    height: 24px;  
+  }
+}
+
+.product-card__icon {
+  margin-right: 4px;
 }

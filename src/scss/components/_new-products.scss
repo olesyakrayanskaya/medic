@@ -74,6 +74,9 @@
 
   &__slide {
     display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: nowrap;
   }
 
   &__footer {

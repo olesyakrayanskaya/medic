@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500&family=Manrope:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <title>MedicalStore</title>
@@ -50,47 +50,281 @@
         </header>
         <div class="new-products__slide">
           <div class="new-products__item product-card">
+            <button class="product-card__watch">
+              <img
+                class="product-card__icon"
+                src="./assets/img/watch.svg"
+                alt="icon"
+              />Быстрый просмотр
+            </button>
             <div class="product-card__icons">
               <button class="product-card__btn product-card__btn_1"></button>
               <button class="product-card__btn product-card__btn_2"></button>
             </div>
-            <img class="product-card__img" src="./assets/img/1.jpg" alt="img" />
-            <div class="product-card__info">
-              <div class="product-card__article">Арт. 4501390</div>
-              <div class="product-card__comments">
-                <img
-                  class="product-card__chat"
-                  src="./assets/img/chat.svg"
-                  alt="icon"
-                />
-                <span class="product-card__count">5</span>
+            <div class="product-card__banner">
+              <img
+                class="product-card__img"
+                src="./assets/img/1.jpg"
+                alt="img"
+              />
+              <div class="product-card__info">
+                <div class="product-card__article">Арт. 4501390</div>
+                <div class="product-card__comments">
+                  <img
+                    class="product-card__chat"
+                    src="./assets/img/chat.svg"
+                    alt="icon"
+                  />
+                  <span class="product-card__count">5</span>
+                </div>
               </div>
             </div>
             <h3 class="product-card__name">
               Ингалятор компрессорный компактный MED-125
             </h3>
-            <div class="product-card__stickers">
-              <span class="sticker sticker_in-stock">В наличии</span>
-              <span class="sticker sticker_hit">Хит</span>
-            </div>
-            <div class="product-card__prices">
-              <div>
-                <span class="product-card__price product-card__price_new"
-                  >24 529 ₽</span
-                >
-                <span class="product-card__unit">шт.</span>
+            <div class="product-card__footer">
+              <div class="product-card__stickers">
+                <span class="sticker sticker_in-stock">В наличии</span>
+                <span class="sticker sticker_hit">Хит</span>
               </div>
-              <span class="product-card__price product-card__price_old"
-                >1 494 ₽</span
-              >
+              <div class="product-card__prices">
+                <div>
+                  <span class="product-card__price product-card__price_new"
+                    >24 529 ₽</span
+                  >
+                  <span class="product-card__unit">шт.</span>
+                </div>
+                <span class="product-card__price product-card__price_old"
+                  >1 494 ₽</span
+                >
+              </div>
+              <div class="product-card__button cart-btn">
+                <button class="cart-btn__decrement">-</button>
+                <div class="cart-btn__count">1</div>
+                <button class="cart-btn__increment">+</button>
+              </div>
             </div>
-            <button class="product-card__button button">
+          </div>
+          <div class="new-products__item product-card">
+            <button class="product-card__watch">
               <img
-                class="product-card__cart"
-                src="./assets/img/cart.svg"
-                alt="cart"
-              />В корзину
+                class="product-card__icon"
+                src="./assets/img/watch.svg"
+                alt="icon"
+              />Быстрый просмотр
             </button>
+            <div class="product-card__icons">
+              <button class="product-card__btn product-card__btn_1"></button>
+              <button class="product-card__btn product-card__btn_2"></button>
+            </div>
+            <div class="product-card__banner">
+              <img
+                class="product-card__img"
+                src="./assets/img/2.jpg"
+                alt="img"
+              />
+              <div class="product-card__info">
+                <div class="product-card__article">Арт. 4501390</div>
+                <div class="product-card__comments">
+                  <img
+                    class="product-card__chat"
+                    src="./assets/img/chat.svg"
+                    alt="icon"
+                  />
+                  <span class="product-card__count">5</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="product-card__name">
+              Облучатель-рециркулятор медицинский СH111-115
+            </h3>
+            <div class="product-card__footer">
+              <div class="product-card__stickers">
+                <span class="sticker sticker_not-available">Нет в наличии</span>
+                <span class="sticker sticker_hit">Хит</span>
+              </div>
+              <div class="product-card__prices">
+                <div>
+                  <span class="product-card__price product-card__price_new"
+                    >6 284 ₽</span
+                  >
+                  <span class="product-card__unit">шт.</span>
+                </div>
+                <span class="product-card__price product-card__price_old"
+                  >1 494 ₽</span
+                >
+              </div>
+              <button class="product-card__button button button_outline">
+                Заказать
+              </button>
+            </div>
+          </div>
+          <div class="new-products__item product-card">
+            <button class="product-card__watch">
+              <img
+                class="product-card__icon"
+                src="./assets/img/watch.svg"
+                alt="icon"
+              />Быстрый просмотр
+            </button>
+            <div class="product-card__icons">
+              <button class="product-card__btn product-card__btn_1"></button>
+              <button class="product-card__btn product-card__btn_2"></button>
+            </div>
+            <div class="product-card__banner">
+              <img
+                class="product-card__img"
+                src="./assets/img/3.jpg"
+                alt="img"
+              />
+              <div class="product-card__info">
+                <div class="product-card__article">Арт. 4501390</div>
+              </div>
+            </div>
+            <h3 class="product-card__name">
+              Тонометр механический CS Medica CS-106 с фонедоскопом
+            </h3>
+            <div class="product-card__footer">
+              <div class="product-card__stickers">
+                <span class="sticker sticker_in-stock">В наличии</span>
+                <span class="sticker sticker_new">Новинка</span>
+                <span class="sticker sticker_promotion">Акция</span>
+              </div>
+              <div class="product-card__prices">
+                <div>
+                  <span class="product-card__price product-card__price_new"
+                    >1 494 ₽</span
+                  >
+                  <span class="product-card__unit">шт.</span>
+                </div>
+                <span class="product-card__price product-card__price_old"
+                  >1 494 ₽</span
+                >
+              </div>
+              <button class="product-card__button button">
+                <img
+                  class="product-card__cart"
+                  src="./assets/img/cart.svg"
+                  alt="cart"
+                />В корзину
+              </button>
+            </div>
+          </div>
+          <div class="new-products__item product-card">
+            <button class="product-card__watch">
+              <img
+                class="product-card__icon"
+                src="./assets/img/watch.svg"
+                alt="icon"
+              />Быстрый просмотр
+            </button>
+            <div class="product-card__icons">
+              <button class="product-card__btn product-card__btn_1"></button>
+              <button class="product-card__btn product-card__btn_2"></button>
+            </div>
+            <div class="product-card__banner">
+              <img
+                class="product-card__img"
+                src="./assets/img/4.jpg"
+                alt="img"
+              />
+              <div class="product-card__info">
+                <div class="product-card__article">Арт. 4501390</div>
+                <div class="product-card__comments">
+                  <img
+                    class="product-card__chat"
+                    src="./assets/img/chat.svg"
+                    alt="icon"
+                  />
+                  <span class="product-card__count">5</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="product-card__name">Термометр мед.электр.WT-03</h3>
+            <div class="product-card__footer">
+              <div class="product-card__stickers">
+                <span class="sticker sticker_in-stock">В наличии</span>
+                <span class="sticker sticker_new">Новинка</span>
+              </div>
+              <div class="product-card__prices">
+                <div>
+                  <span class="product-card__price product-card__price_new"
+                    >994 ₽</span
+                  >
+                  <span class="product-card__unit">шт.</span>
+                </div>
+                <span class="product-card__price product-card__price_old"
+                  >1 494 ₽</span
+                >
+              </div>
+              <button class="product-card__button button">
+                <img
+                  class="product-card__cart"
+                  src="./assets/img/cart.svg"
+                  alt="cart"
+                />В корзину
+              </button>
+            </div>
+          </div>
+          <div class="new-products__item product-card">
+            <button class="product-card__watch">
+              <img
+                class="product-card__icon"
+                src="./assets/img/watch.svg"
+                alt="icon"
+              />Быстрый просмотр
+            </button>
+            <div class="product-card__icons">
+              <button class="product-card__btn product-card__btn_1"></button>
+              <button class="product-card__btn product-card__btn_2"></button>
+            </div>
+            <div class="product-card__banner">
+              <img
+                class="product-card__img"
+                src="./assets/img/5.jpg"
+                alt="img"
+              />
+              <div class="product-card__info">
+                <div class="product-card__article">Арт. 4501390</div>
+                <div class="product-card__comments">
+                  <img
+                    class="product-card__chat"
+                    src="./assets/img/chat.svg"
+                    alt="icon"
+                  />
+                  <span class="product-card__count">5</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="product-card__name">
+              Насадки CS Medica SP-12 для зубной щетки CS Medica SonicPulsar
+              CS-131
+            </h3>
+            <div class="product-card__footer">
+              <div class="product-card__stickers">
+                <span class="sticker sticker_not-available">Нет в наличии</span>
+                <span class="sticker sticker_new">Новинка</span>
+                <span class="sticker sticker_sale">%</span>
+              </div>
+              <div class="product-card__prices">
+                <div>
+                  <span class="product-card__price product-card__price_new"
+                    >3 736 ₽</span
+                  >
+                  <span class="product-card__unit">шт.</span>
+                </div>
+                <span class="product-card__price product-card__price_old"
+                  >1 494 ₽</span
+                >
+              </div>
+              <button class="product-card__button button">
+                <img
+                  class="product-card__cart"
+                  src="./assets/img/cart.svg"
+                  alt="cart"
+                />В корзину
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -174,7 +408,11 @@
             placeholder="Ваш вопрос*"
           ></textarea>
           <div class="question__send">
-            <input class="question__btn button button_dark" type="submit" value="Задать вопрос" />
+            <input
+              class="question__btn button button_dark"
+              type="submit"
+              value="Задать вопрос"
+            />
             <input
               class="question__checkbox"
               type="checkbox"

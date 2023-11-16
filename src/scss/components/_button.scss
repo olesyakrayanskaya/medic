@@ -7,13 +7,13 @@
   align-items: center;
   border-radius: 12px;
   background-color: variables.$default-btn-color;
-  width: 292px;
   height: 52px;
   color: variables.$dark-btn-color;
   border: none;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  width: 100%;
 
   img {
     width: 20px;
@@ -61,7 +61,6 @@
   }
 
   @media (max-width: variables.$desktop-md) {
-    width: 172px;
     height: 36px;
     padding: 8px 16px;
     border-radius: 8px;
