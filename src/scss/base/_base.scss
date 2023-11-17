@@ -22,23 +22,24 @@ html {
 
 .container {
   width: 100%;
-  max-width: 1660px;
+  max-width: 1700px;
   margin: 0 auto;
+  padding: 0 20px;
 
   @media (max-width: variables.$desktop-md) {
-    max-width: 1184px;
+    max-width: 1224px;
   }
 
   @media (max-width: variables.$desktop-sm) {
-    max-width: 952px;
+    max-width: 992px;
   }
 
   @media (max-width: variables.$tablet) {
-    max-width: 655px;
+    max-width: 695px;
   }
 
   @media (max-width: variables.$mobile) {
-    max-width: 320px;
+    max-width: 370px;
   }
 }
 
