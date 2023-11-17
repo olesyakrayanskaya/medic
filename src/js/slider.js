@@ -1,6 +1,6 @@
 'use strict';
 
-const screenWidth = window.innerWidth;
+const screenWidth = screen.width;
 const products = document.querySelectorAll('.product-card');
 const productCount = products.length;
 const dotsContainer = document.querySelector('.new-products__footer');
