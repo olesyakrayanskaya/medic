@@ -11,9 +11,11 @@ if (screenWidth >= 968) {
   productOneSlideCount = 5;
 } else if (screenWidth >= 767) {
   productOneSlideCount = 4;
-} else if (screenWidth >= 360) {
+} else if (screenWidth >= 524) {
+  productOneSlideCount = 3;
+} else if (screenWidth >= 359) {
   productOneSlideCount = 2;
-} 
+} else productOneSlideCount = 1;
 
 for (let i = productOneSlideCount; i < products.length; i++) {
   products[i].style.display = 'none';

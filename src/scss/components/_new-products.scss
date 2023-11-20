@@ -77,6 +77,10 @@
     justify-content: flex-start;
     align-items: stretch;
     flex-wrap: nowrap;
+
+    @media (max-width: variables.$mobile) {
+      justify-content: center;
+    }
   }
 
   &__slide_hidden {

@@ -12,6 +12,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  height: 440px;
 
   &:hover &__watch {
     display: inline-flex;
@@ -30,14 +31,11 @@
   }
 
   @media (max-width: variables.$tablet-lg) {
-    width: 213px;
-  }
-
-  @media (max-width: variables.$tablet) {
+    width: 197px;
   }
 
   @media (max-width: variables.$mobile) {
-    width: 156px;
+    width: 316px;
   }
 
   &__icons {
@@ -99,18 +97,19 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
-    margin-bottom: 19px;
+    margin-bottom: 12px;
     flex: 0 0 auto;
+    height: 152px;
   }
 
   &__img {
     margin: -20px auto;
-    height: 170px;
+    height: 150px;
     width: 100%;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     -o-object-position: top;
-       object-position: top;
+    object-position: top;
   }
 
   &__info {
@@ -159,6 +158,8 @@
     line-height: 24px;
     margin-bottom: 12px;
     flex: 1 0 auto;
+    height: 48px;
+    overflow: hidden;
 
     @media (max-width: variables.$desktop-md) {
       font-size: 14px;
@@ -175,14 +176,16 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
+    height: 24px;
   }
 
   &__prices {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
+    height: 24px;
 
     @media (max-width: variables.$tablet) {
       flex-direction: column-reverse;
