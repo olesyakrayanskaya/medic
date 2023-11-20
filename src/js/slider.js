@@ -4,7 +4,7 @@ const screenWidth = screen.width;
 const products = document.querySelectorAll('.product-card');
 const productCount = products.length;
 const dotsContainer = document.querySelector('.new-products__footer');
-let productOneSlideCount = 0;
+let productOneSlideCount = 5;
 let slideNumber = 0;
 
 if (screenWidth >= 968) {
