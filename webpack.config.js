@@ -15,6 +15,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.[contenthash].js',
     assetModuleFilename: path.join('[name].[contenthash][ext]'),
+    clean: true,
   },
   module: {
     rules: [
